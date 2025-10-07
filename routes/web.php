@@ -68,8 +68,8 @@ Route::get('/Main', function () {
     return view('Main');
 })->middleware(['auth'])->name('Main');
 
-Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
-Route::post('/register', [RegisteredUserController::class, 'store']);
+// Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
+// Route::post('/register', [RegisteredUserController::class, 'store']);
 
 
 Route::get('/Recomendation', function () {
@@ -86,9 +86,9 @@ Route::post('/adminstudio', [StudioController::class, 'store'])->name('adminstud
 Route::get('/food', function () {
     return view('food');
 })->name('food');
-Route::get('/login', function () {
-    return view('auth.login');
-});
+// Route::get('/login', function () {
+//     return view('auth.login');
+// });
 
 Route::get('/Reservation', [ReservationController::class, 'index'])->name('Reservation');
 Route::post('/Reservation', [ReservationController::class, 'store'])->name('order.store');
