@@ -106,7 +106,7 @@ body {
 }
 
 .carouseltrending {
-    margin-left: 200px;
+    margin : 0 auto;
     width: 900px;
     height: 510px;
     overflow: hidden;
@@ -228,6 +228,14 @@ body {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+.movie-page-reservation,
+.movie-page-reservation:visited,
+.movie-page-reservation:hover,
+.movie-page-reservation:active {
+    color: white;
+    text-decoration: none;
+}
+
 
 /* Hover effect */
 .movie-page-reservation:hover {
